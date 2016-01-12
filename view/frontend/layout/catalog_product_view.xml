@@ -9,9 +9,27 @@
 <page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     
     <body>
-     <referenceBlock name="product.info.addtocart" remove="true"/>
-     <referenceContainer name="content">
-    <block class="Magento\Catalog\Block\Product\View" name="product.info.addtocartcustom" as="addtocartcustom" template="Emizentech_Callforprice::addtocart.phtml"/>
-       </referenceContainer> 
+    
+  
+
+    <container name="product.info.form.content">
+    		<referenceBlock name="product.info.addtocart" remove="true"/>
+       		
+       
+    		<block class="Magento\Catalog\Block\Product\View" name="product.info.addtocartcustom" as="addtocartcustom" template="Emizentech_Callforprice::addtocart.phtml" /> 
+
+    
+    	
+       </container> 
+
+       <container name="product.info.options.wrapper.bottom">
+    		<!-- <referenceBlock name="product.info.addtocart" remove="true"/> -->
+       		<referenceBlock name="product.info.addtocart.additional" remove="true"/>
+       
+    			<!-- <block class="Magento\Catalog\Block\Product\View" name="product.info.addtocartcustom" as="addtocartcustom" template="Emizentech_Callforprice::addtocart.phtml" /> -->
+    
+    			<block class="Magento\Catalog\Block\Product\View" name="product.info.addtocart.additionalcustom" as="product.info.addtocartcustom" template="Emizentech_Callforprice::addtocart.phtml"/> 
+       
+       </container> 
        </body>
 </page>
