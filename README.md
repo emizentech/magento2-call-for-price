@@ -46,6 +46,10 @@ to Enable this module you need to follow these steps:
 <strong>Re-Compile (in-case you have compilation enabled)</strong>
 	<pre>bin/magento setup:di:compile</pre>
 </li>
+<li>
+<strong>Update from composer : for already installed version</strong>
+	<pre>composer update emizentech/callforprice</pre>
+</li>
 </ul>
 
 
