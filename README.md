@@ -2,7 +2,7 @@
 
 <h2>Composer Installation Instructions</h2>
 Add GIT Repository to composer
-<pre>be
+<pre>
 composer config repositories.emizentech-magento2-call-for-price vcs https://github.com/emizentech/magento2-call-for-price/
 </pre>
 
